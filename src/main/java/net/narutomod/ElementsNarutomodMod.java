@@ -15,7 +15,6 @@ import net.narutomod.gui.GuiScrollWaterDragonGui;
 import net.narutomod.gui.GuiScrollTransformationGui;
 import net.narutomod.gui.GuiScrollSwampPitGui;
 import net.narutomod.gui.GuiScrollShadowImitationGui;
-import net.narutomod.gui.GuiScrollSealingChainsGui;
 import net.narutomod.gui.GuiScrollSealing4SymbolsGui;
 import net.narutomod.gui.GuiScrollRasenshurikenGui;
 import net.narutomod.gui.GuiScrollRasenganGui;
@@ -26,7 +25,6 @@ import net.narutomod.gui.GuiScrollMindTransferGui;
 import net.narutomod.gui.GuiScrollLightningPantherGui;
 import net.narutomod.gui.GuiScrollLightningChakraModeGui;
 import net.narutomod.gui.GuiScrollLightningBeastGui;
-import net.narutomod.gui.GuiScrollKirinGui;
 import net.narutomod.gui.GuiScrollKikaichuSphereGui;
 import net.narutomod.gui.GuiScrollKageBunshinGui;
 import net.narutomod.gui.GuiScrollHidingInRockGui;
@@ -45,7 +43,6 @@ import net.narutomod.gui.GuiScrollEnhancedStrengthGui;
 import net.narutomod.gui.GuiScrollEarthWallGui;
 import net.narutomod.gui.GuiScrollEarthSpearsGui;
 import net.narutomod.gui.GuiScrollEarthSandwichGui;
-import net.narutomod.gui.GuiScrollEarthGolemGui;
 import net.narutomod.gui.GuiScrollChidoriGui;
 import net.narutomod.gui.GuiScrollCellularActivationGui;
 import net.narutomod.gui.GuiScrollBodyReplacementGui;
@@ -424,12 +421,6 @@ public class ElementsNarutomodMod implements IFuelHandler, IWorldGenerator {
 				return new GuiScrollLightningPantherGui.GuiContainerMod(world, x, y, z, player);
 			if (id == GuiScrollPuppetGui.GUIID)
 				return new GuiScrollPuppetGui.GuiContainerMod(world, x, y, z, player);
-			if (id == GuiScrollKirinGui.GUIID)
-				return new GuiScrollKirinGui.GuiContainerMod(world, x, y, z, player);
-			if (id == GuiScrollEarthGolemGui.GUIID)
-				return new GuiScrollEarthGolemGui.GuiContainerMod(world, x, y, z, player);
-			if (id == GuiScrollSealingChainsGui.GUIID)
-				return new GuiScrollSealingChainsGui.GuiContainerMod(world, x, y, z, player);
 			return null;
 		}
 
@@ -519,12 +510,6 @@ public class ElementsNarutomodMod implements IFuelHandler, IWorldGenerator {
 				return new GuiScrollLightningPantherGui.GuiWindow(world, x, y, z, player);
 			if (id == GuiScrollPuppetGui.GUIID)
 				return new GuiScrollPuppetGui.GuiWindow(world, x, y, z, player);
-			if (id == GuiScrollKirinGui.GUIID)
-				return new GuiScrollKirinGui.GuiWindow(world, x, y, z, player);
-			if (id == GuiScrollEarthGolemGui.GUIID)
-				return new GuiScrollEarthGolemGui.GuiWindow(world, x, y, z, player);
-			if (id == GuiScrollSealingChainsGui.GUIID)
-				return new GuiScrollSealingChainsGui.GuiWindow(world, x, y, z, player);
 			return null;
 		}
 	}

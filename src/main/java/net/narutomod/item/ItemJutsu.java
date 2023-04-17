@@ -6,6 +6,7 @@ import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 import net.minecraftforge.fml.common.FMLCommonHandler;
 
+
 import net.minecraft.world.World;
 import net.minecraft.util.EnumHand;
 import net.minecraft.util.EnumActionResult;
@@ -35,6 +36,9 @@ import net.narutomod.procedure.ProcedureUpdateworldtick;
 import net.narutomod.Chakra;
 import net.narutomod.Particles;
 import net.narutomod.PlayerTracker;
+import net.narutomod.ModConfig;
+
+import java.util.Random;
 
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.Lists;
@@ -86,7 +90,9 @@ public class ItemJutsu extends ElementsNarutomodMod.ModElement {
 		if (stack.getItem() instanceof Base) {
 			Base baseitem = (Base)stack.getItem();
 			if (baseitem.getCurrentJutsuXp(stack) < baseitem.getCurrentJutsuRequiredXp(stack)) {
-				baseitem.addCurrentJutsuXp(stack, 1);
+				Random rand = new Random();
+				int randNumber = rand.nextInt(ModConfig.JUTSU_RANDOM_NUMBER_LIMIT) + ModConfig.JUTSU_ADDITONAL_EXP;
+                baseitem.addCurrentJutsuXp(stack, (int)(randNumber  + (randNumber * ModConfig.EXP_BONUS_RATE)));
 			}
 		}
 	}

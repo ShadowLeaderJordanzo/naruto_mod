@@ -91,7 +91,7 @@ public class ProcedureOnPlayerPostTick extends ElementsNarutomodMod.ModElement {
 		double rand = 0;
 		double rngbase = 0;
 		boolean achievedMedical = false;
-		if (((((entity instanceof EntityPlayer) ? ((EntityPlayer) entity).experienceLevel : 0) >= 10)
+		if (((((entity instanceof EntityPlayer) ? ((EntityPlayer) entity).experienceLevel : 0) >= 1)
 				&& ((entity.getEntityData().getDouble((NarutomodModVariables.BATTLEXP))) > 0))) {
 			if (((!(world.isRemote)) && (!(entity.getEntityData().getBoolean((NarutomodModVariables.FirstGotNinjutsu)))))) {
 				entity.getEntityData().setBoolean((NarutomodModVariables.FirstGotNinjutsu), (true));
@@ -516,8 +516,8 @@ public class ProcedureOnPlayerPostTick extends ElementsNarutomodMod.ModElement {
 																								"narutomod:kekkei_tota_awakened")))
 																				.isDone()
 																		: false)))))))
-								&& (((entity instanceof EntityPlayer) ? ((EntityPlayer) entity).experienceLevel : 0) >= 10)))) {
-					if (((((EntityLivingBase) entity).getRNG().nextDouble() <= 0.001) && (((((entity instanceof EntityPlayer)
+								&& (((entity instanceof EntityPlayer) ? ((EntityPlayer) entity).experienceLevel : 0) >= 1)))) {
+					if (((((EntityLivingBase) entity).getRNG().nextDouble() <= 0.01) && (((((entity instanceof EntityPlayer)
 							? ((EntityPlayer) entity).inventory.hasItemStack(new ItemStack(ItemDoton.block, (int) (1)))
 							: false)
 							|| ((entity instanceof EntityPlayer)
@@ -533,7 +533,7 @@ public class ProcedureOnPlayerPostTick extends ElementsNarutomodMod.ModElement {
 									? ((EntityPlayer) entity).inventory.hasItemStack(new ItemStack(ItemRaiton.block, (int) (1)))
 									: false)))) {
 						rngbase = (double) (((ModConfig.SPAWN_AS_JINCHURIKI && EntityBijuManager.availableBijus() > 0 ? 5 : 0) + (10 * 10)) + 5);
-						if ((((EntityLivingBase) entity).getRNG().nextDouble() <= (10 / (rngbase)))) {
+						if ((((EntityLivingBase) entity).getRNG().nextDouble() <= (15 / (rngbase)))) {
 							stack = new ItemStack(ItemByakugan.helmet, (int) (1));
 							if ((!(((entity instanceof EntityPlayerMP) && ((entity).world instanceof WorldServer))
 									? ((EntityPlayerMP) entity).getAdvancements()
@@ -558,7 +558,7 @@ public class ProcedureOnPlayerPostTick extends ElementsNarutomodMod.ModElement {
 												.getObject(new ResourceLocation("ui.toast.challenge_complete")),
 										SoundCategory.NEUTRAL, (float) 1, (float) 1);
 							}
-						} else if ((((EntityLivingBase) entity).getRNG().nextDouble() <= (10 / ((rngbase) - 10)))) {
+						} else if ((((EntityLivingBase) entity).getRNG().nextDouble() <= (25 / ((rngbase) - 10)))) {
 							GuiScrollGenjutsuGui.giveGenjutsu((EntityPlayer) entity);
 							stack = new ItemStack(ItemSharingan.helmet, (int) (1));
 							if ((!(((entity instanceof EntityPlayerMP) && ((entity).world instanceof WorldServer))

@@ -3,14 +3,14 @@
     "modid": "narutomod",
     "name": "NarutoMod",
     "description": "",
-    "version": "0.2.12-beta",
+    "version": "0.2.10-beta",
     "credits": "Created using mod maker MCreator - https://mcreator.net/about",
-    "logoFile": "assets/narutomod/textures/shinobi_craft-min.png",
+    "logoFile": "",
     "mcversion": "1.12.2",
     "url": "https://www.youtube.com/c/AHZNB",
     "updateUrl": "",
     "authorList": [
-      "AHZNB"
+      "ahznb"
     ],
     "dependencies": [],
     "dependants": [],

@@ -38,6 +38,21 @@ public class ModConfig extends ElementsNarutomodMod.ModElement {
 	@Config.Comment("Chakra regeneration rate. 0.006 means 0.6% of your max chakra every 4 seconds")
 	public static float CHAKRA_REGEN_RATE = 0.006F;
 
+	@Config.Comment("EXP bonus rate. 0.1 means 10% more exp")
+	public static float EXP_BONUS_RATE = 0.1F;
+
+	@Config.Comment("EXP Modifier, 0.5 is default, this is applied after the exp is determined from the damage dealt. 1.25 means 25% more")
+	public static float EXP_MODIFIER = 0.5F;
+
+	@Config.Comment("Idle EXP Gain. This is exp given if you stand still and do nothing. Effected by EXP Bonus Rate")
+	public static float IDLE_EXP_GAIN = 0.3F;
+
+	@Config.Comment("Base Jutsu EXP. This is the base amount of exp you get hitting with a jutsu. Effected by EXP Bonus Rate")
+	public static int JUTSU_ADDITONAL_EXP = 1;
+
+	@Config.Comment("Jutsu Random Number Limit. This is the number rolled to determine how much exp you get from a jutsu. 3 means 1-3")
+	public static int JUTSU_RANDOM_NUMBER_LIMIT = 3;
+
 	@Config.Comment("Disable this to not allow any jutsu scrolls in loot chests")
 	public static boolean ENABLE_JUTSU_SCROLLS_IN_LOOTCHESTS = true;
 

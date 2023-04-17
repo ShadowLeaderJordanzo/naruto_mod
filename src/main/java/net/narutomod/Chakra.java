@@ -161,7 +161,7 @@ public class Chakra extends ElementsNarutomodMod.ModElement {
 			if (d > d1 && this.user.ticksExisted % 20 == 0) {
 				this.consume(10.0d);
 			}
-			if (d < 10.0d && d1 > 150.0d
+			if (d < 5.0d && d1 > 150.0d
 			 && (!(this.user instanceof EntityPlayer) || !((EntityPlayer)this.user).isCreative())) {
 				this.user.addPotionEffect(new PotionEffect(MobEffects.WEAKNESS, 100, 3));
 				this.user.addPotionEffect(new PotionEffect(MobEffects.SLOWNESS, 100, 3));
@@ -171,6 +171,9 @@ public class Chakra extends ElementsNarutomodMod.ModElement {
 			if (this.user.posX != this.prevX || this.user.posZ != this.prevZ
 			 || !this.user.onGround || this.user.isSwingInProgress) {
 			 	this.motionlessTime = 0;
+			}
+			if (this.motionlessTime > 25 && this.user.ticksExisted % 20 == 0) {
+				PlayerTracker.addBattleXp((EntityPlayerMP)this.user, ModConfig.IDLE_EXP_GAIN +  (ModConfig.IDLE_EXP_GAIN * ModConfig.EXP_BONUS_RATE));
 			}
 			if (this.motionlessTime > 100 && this.user.ticksExisted % 80 == 0) {
 				this.consume(-ModConfig.CHAKRA_REGEN_RATE);
@@ -264,7 +267,7 @@ public class Chakra extends ElementsNarutomodMod.ModElement {
 					} else {
 						Pathway p = playerMap.get((EntityPlayer)entity);
 						if (p != null) {
-							p.set(Math.min(10d, p.getMax()));
+							p.set(Math.min(p.getMax()/4, p.getMax()));
 							playerMap.remove((EntityPlayer)entity);
 						}
 					}

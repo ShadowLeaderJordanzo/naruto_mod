@@ -71,7 +71,7 @@ public class ProcedureOnEntitySpawn extends ElementsNarutomodMod.ModElement {
 			}
 		}
 		if (((entity instanceof EntityPlayerMP) && ((world.provider.getDimension()) == (0)))) {
-			((EntityPlayer) entity).sendStatusMessage(ForgeHooks.newChatWithLinks(I18n.translateToLocal("chattext.intro.message1")), false);
+			((EntityPlayer) entity).sendStatusMessage(ForgeHooks.newChatWithLinks(I18n.translateToLocal("Welcome -smiles-")), false);
 		}
 	}
 

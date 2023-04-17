@@ -250,21 +250,24 @@ public class PlayerTracker extends ElementsNarutomodMod.ModElement {
 			Entity targetEntity = event.getEntity();
 			Entity sourceEntity = event.getSource().getTrueSource();
 			float amount = event.getAmount();
-			if (!targetEntity.equals(sourceEntity) && sourceEntity instanceof EntityLivingBase && amount > 0f) {
-				if (this.isOffCooldown(targetEntity) && targetEntity instanceof EntityPlayer && amount < ((EntityPlayer)targetEntity).getHealth()) {
+			if (!targetEntity.equals(sourceEntity) && amount > 0f) {
+				if (targetEntity instanceof EntityPlayer && amount < ((EntityPlayer)targetEntity).getHealth()) {
+					//logBattleExp((EntityPlayer)targetEntity, 1d);
 					double bxp = getBattleXp((EntityPlayer)targetEntity);
-					logBattleExp((EntityPlayer)targetEntity, bxp < 1d ? 1d : (amount / MathHelper.sqrt(MathHelper.sqrt(bxp))));
+					logBattleExp((EntityPlayer)targetEntity, bxp < 1d ? 1d : (amount / MathHelper.sqrt(bxp)) + ((amount / MathHelper.sqrt(bxp)) * ModConfig.EXP_BONUS_RATE) );
 				}
 				if (sourceEntity instanceof EntityPlayer) {
-					double xp = 0.0d;
-					if (targetEntity instanceof EntityLivingBase && this.isOffCooldown(sourceEntity)) {
+					//logBattleExp((EntityPlayer)sourceEntity, 1d);
+					double xp = 1d;
+					if (targetEntity instanceof EntityLivingBase) {
 						EntityLivingBase target = (EntityLivingBase)targetEntity;
 						int resistance = target.isPotionActive(MobEffects.RESISTANCE) 
 						 ? target.getActivePotionEffect(MobEffects.RESISTANCE).getAmplifier() : 1;
 						double x = MathHelper.sqrt(target.getMaxHealth() * ProcedureUtils.getModifiedAttackDamage(target)
 						 * MathHelper.sqrt(ProcedureUtils.getArmorValue(target)+1d)) * resistance;
-						xp = Math.min(x * Math.min(amount / target.getMaxHealth(), 1f) * 0.5d, 50d);
-//System.out.println(">>> target:"+target.getName()+", x="+x+", amount="+amount+", maxhp="+target.getMaxHealth()+", xp="+xp);
+						xp = Math.min(x * Math.min(amount / target.getMaxHealth(), 1f) * ModConfig.EXP_MODIFIER, 50d);
+						// Creatures stats * the damage/max health (min 1) * the modifier (0.5) and capped at 50
+						xp += xp * ModConfig.EXP_BONUS_RATE;
 					}
 					if (xp > 0d) {
 						logBattleExp((EntityPlayer)sourceEntity, xp);
