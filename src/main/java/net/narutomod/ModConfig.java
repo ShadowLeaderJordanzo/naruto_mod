@@ -53,6 +53,12 @@ public class ModConfig extends ElementsNarutomodMod.ModElement {
 	@Config.Comment("Jutsu Random Number Limit. This is the number rolled to determine how much exp you get from a jutsu. 3 means 1-3")
 	public static int JUTSU_RANDOM_NUMBER_LIMIT = 3;
 
+	@Config.Comment("This being on allows people to keep Jutsu on Death.")
+	public static boolean KEEP_JUTSU_ON_DEATH = true;
+
+	@Config.Comment("This is the level that you need to be a ninja, the normal is 10")
+	public static int NINJA_LEVEL = 10;
+
 	@Config.Comment("Disable this to not allow any jutsu scrolls in loot chests")
 	public static boolean ENABLE_JUTSU_SCROLLS_IN_LOOTCHESTS = true;
 

@@ -71,7 +71,7 @@ public class ProcedureOnEntitySpawn extends ElementsNarutomodMod.ModElement {
 			}
 		}
 		if (((entity instanceof EntityPlayerMP) && ((world.provider.getDimension()) == (0)))) {
-			((EntityPlayer) entity).sendStatusMessage(ForgeHooks.newChatWithLinks(I18n.translateToLocal("Welcome -smiles-")), false);
+			((EntityPlayer) entity).sendStatusMessage(ForgeHooks.newChatWithLinks(I18n.translateToLocal("Tern Netters Offical N(rp) Server. \n Welcom kimmten -smiles- \n All Credit to original Mod Creator(AHZNB)")), false);
 		}
 	}
 

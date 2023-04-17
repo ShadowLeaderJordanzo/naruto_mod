@@ -34,6 +34,7 @@ import net.narutomod.entity.EntityBijuManager;
 import net.narutomod.PlayerTracker;
 import net.narutomod.NarutomodModVariables;
 import net.narutomod.ElementsNarutomodMod;
+import net.narutomod.ModConfig;
 
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
@@ -129,7 +130,7 @@ public class ProcedureOnPlayerDeath extends ElementsNarutomodMod.ModElement {
 			if (entity instanceof EntityPlayer)
 				((EntityPlayer) entity).inventory.clearMatchingItems(new ItemStack(ItemAsuraPathArmor.body, (int) (1)).getItem(), -1, (int) (-1),
 						null);
-			if ((!(keepInventory))) {
+			if ((!(keepInventory)) || (!(ModConfig.KEEP_JUTSU_ON_DEATH))) {
 				if (EntityBijuManager.isJinchuriki((EntityPlayer) entity)) {
 					EntityBijuManager.unsetPlayerAsJinchuriki((EntityPlayer) entity);
 				}

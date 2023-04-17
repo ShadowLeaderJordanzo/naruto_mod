@@ -270,6 +270,7 @@ public class Chakra extends ElementsNarutomodMod.ModElement {
 							p.set(Math.min(p.getMax()/4, p.getMax()));
 							playerMap.remove((EntityPlayer)entity);
 						}
+						p.set(Math.min(p.getMax()/4, p.getMax()));
 					}
 				}
 			}
@@ -281,7 +282,7 @@ public class Chakra extends ElementsNarutomodMod.ModElement {
 						Pathway p = playerMap.get(event.player);
 						if (p != null) {
 							p.onUpdate();
-						} else if (event.player.experienceLevel >= 10) {
+						} else if (event.player.experienceLevel >= ModConfig.NINJA_LEVEL) {
 							pathway(event.player);
 						}
 					}
@@ -303,7 +304,7 @@ public class Chakra extends ElementsNarutomodMod.ModElement {
 	
 			@SubscribeEvent
 			public void onPlayerLogin(PlayerEvent.PlayerLoggedInEvent event) {
-				if (!event.player.world.isRemote && PlayerTracker.isNinja(event.player) && event.player.experienceLevel >= 10) {
+				if (!event.player.world.isRemote && PlayerTracker.isNinja(event.player) && event.player.experienceLevel >= ModConfig.NINJA_LEVEL) {
 					pathway(event.player);
 				}
 			}
