@@ -1,8 +1,8 @@
 {
   "id_map": {
-    "GUI": 60,
-    "ENTITY": 414,
-    "DIMENSION": 13
+    "ENTITY": 420,
+    "DIMENSION": 13,
+    "GUI": 63
   },
   "mod_elements": [
     {
@@ -6748,7 +6748,305 @@
       }
     },
     {
-      "name": "HidanThrown",
+      "name": "ClothesHokage",
+      "type": "armor",
+      "sortid": 816,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "clothes_hokage",
+      "metadata": {
+        "eh": true,
+        "el": false,
+        "eb": false,
+        "ec": true
+      }
+    },
+    {
+      "name": "ClothesKazekage",
+      "type": "armor",
+      "sortid": 817,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "clothes_kazekage",
+      "metadata": {
+        "eh": true,
+        "el": false,
+        "eb": false,
+        "ec": true
+      }
+    },
+    {
+      "name": "ClothesMizukage",
+      "type": "armor",
+      "sortid": 818,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "clothes_mizukage",
+      "metadata": {
+        "eh": true,
+        "el": false,
+        "eb": false,
+        "ec": false
+      }
+    },
+    {
+      "name": "ClothesRaikage",
+      "type": "armor",
+      "sortid": 819,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "clothes_raikage",
+      "metadata": {
+        "eh": true,
+        "el": false,
+        "eb": false,
+        "ec": false
+      }
+    },
+    {
+      "name": "ClothesTsuchikage",
+      "type": "armor",
+      "sortid": 820,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "clothes_tsuchikage",
+      "metadata": {
+        "eh": true,
+        "el": false,
+        "eb": false,
+        "ec": false
+      }
+    },
+    {
+      "name": "ScrollKirinGui",
+      "type": "gui",
+      "sortid": 821,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {
+        "0": 61
+      },
+      "registry_name": "scroll_kirin_gui"
+    },
+    {
+      "name": "ScrollKirin",
+      "type": "item",
+      "sortid": 822,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "scroll_kirin"
+    },
+    {
+      "name": "ScrollEarthGolemGui",
+      "type": "gui",
+      "sortid": 823,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {
+        "0": 62
+      },
+      "registry_name": "scroll_earth_golem_gui"
+    },
+    {
+      "name": "ScrollEarthGolem",
+      "type": "item",
+      "sortid": 824,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "scroll_earth_golem"
+    },
+    {
+      "name": "NinjaArmorOto",
+      "type": "armor",
+      "sortid": 825,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "ninja_armor_oto",
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": false,
+        "ec": true
+      }
+    },
+    {
+      "name": "NinjaArmorObitoWar",
+      "type": "armor",
+      "sortid": 826,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "ninja_armor_obito_war",
+      "metadata": {
+        "eh": false,
+        "el": false,
+        "eb": false,
+        "ec": true
+      }
+    },
+    {
+      "name": "MaskObitoWar",
+      "type": "armor",
+      "sortid": 827,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "mask_obito_war",
+      "metadata": {
+        "eh": true,
+        "el": false,
+        "eb": false,
+        "ec": false
+      }
+    },
+    {
+      "name": "AnbuRobe",
+      "type": "armor",
+      "sortid": 828,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "anbu_robe",
+      "metadata": {
+        "eh": false,
+        "el": false,
+        "eb": false,
+        "ec": true
+      }
+    },
+    {
+      "name": "OnZombieDoctor",
+      "type": "procedure",
+      "sortid": 829,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "on_zombie_doctor",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "EventCommandCommandExecuted",
+      "type": "procedure",
+      "sortid": 830,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "event_command_command_executed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "cmdparams",
+            "type": "map"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ScrollSealingChainsGui",
+      "type": "gui",
+      "sortid": 831,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {
+        "0": 63
+      },
+      "registry_name": "scroll_sealing_chains_gui"
+    },
+    {
+      "name": "ScrollSealingChains",
+      "type": "item",
+      "sortid": 832,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "scroll_sealing_chains"
+    },
+    {
+      "name": "PoisonbombBulletHitsBlock",
+      "type": "procedure",
+      "sortid": 833,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "poisonbomb_bullet_hits_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PoisonBombRecipe",
+      "type": "recipe",
+      "sortid": 834,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "poison_bomb_recipe"
+    },
+    {
+      "name": "SpawnTailedBeasts",
+      "type": "code",
+      "sortid": 835,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "spawn_tailed_beasts"
+    },
+    {
+      "name": "BijuMap",
+      "type": "item",
+      "sortid": 836,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "biju_map"
+    },
+    {
+      "name": "ModConfig",
+      "type": "code",
+      "sortid": 837,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "naruto_mod_config"
+    },
+    {
+      "name": "ScytheHidanThrown",
       "type": "gun",
       "sortid": 815,
       "compiles": true,
@@ -6756,7 +7054,39 @@
       "ids": {
         "0": 414
       },
-      "registry_name": "hidan_thrown"
+      "registry_name": "scythe_hidan_thrown"
+    },
+    {
+      "name": "Kunai3prong",
+      "type": "gun",
+      "sortid": 839,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {
+        "0": 418
+      },
+      "registry_name": "kunai_3prong"
+    },
+    {
+      "name": "Kunai3prongRecipe",
+      "type": "recipe",
+      "sortid": 840,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kunai_3prong_recipe"
+    },
+    {
+      "name": "Hiraishin",
+      "type": "mob",
+      "sortid": 841,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {
+        "0": 419,
+        "1": 420
+      },
+      "registry_name": "hiraishin"
     }
   ],
   "variable_elements": [
@@ -6949,13 +7279,6 @@
       "name": "Kaguya_FinalTSB",
       "files": [
         "bigtruthseekerball"
-      ],
-      "category": "master"
-    },
-    {
-      "name": "dojutsu_activate",
-      "files": [
-        "dojutsu"
       ],
       "category": "master"
     },
@@ -7628,12 +7951,21 @@
       ],
       "category": "master",
       "subtitle": ""
+    },
+    {
+      "name": "dojutsu",
+      "files": [
+        "dojutsu"
+      ],
+      "category": "master",
+      "subtitle": ""
     }
   ],
   "language_map": {
     "en_us": {
       "item.kiba_blades.name": "Kiba Blades",
       "entity.crow.name": "Crow",
+      "chattext.gedomazo.cantspawn": "Can\u0027t summon Gedo Mazo, it\u0027s already in the world",
       "entity.tenten.name": "Tenten",
       "item.futton.name": "Boil Release",
       "item.scroll_water_prison.name": "Water Release - Water Prison jutsu",
@@ -7648,18 +7980,19 @@
       "item.shuriken.name": "Shuriken",
       "entity.cellular_activation.name": "Cellular Activation",
       "entity.entityasakujaku.name": "Asakujaku (Morning Peacock)",
-      "item.scroll_water_dragon.name": "Water Release - Water Dragon Bullet",
+      "item.scroll_water_dragon.name": "Water Release - Water Dragon Bullet Scroll",
       "tooltip.kekkeimora.expansivetsb": "Expansive Truth Seeking Ball",
       "item.gunbai.name": "Gunbai",
       "entity.tailed_beast.name": "Tailed Beast",
-      "item.scroll_rasenshuriken.name": "Wind Release - Rasenshuriken",
-      "entity.itachi.name": "Uchiha Itachi",
-      "item.scroll_lightning_panther.name": "Lightning Release: Black Panther",
-      "entity.jinchuriki_clone.name": "Tail beast cloak",
+      "item.scroll_rasenshuriken.name": "Wind Release - Rasenshuriken Scroll",
+      "entity.itachi.name": "Itachi Uchiha",
+      "item.scroll_lightning_panther.name": "Lightning Release - Black Panther Scroll",
+      "item.clothes_raikagehelmet.name": "Raikage Hat",
+      "entity.jinchuriki_clone.name": "Tailed Beast Cloak",
       "tipped_arrow.effect.paralysis": "Arrow of Paralysis",
       "item.byakurinnesharinganhelmet.name": "Fake Rinne Sharingan",
       "tipped_arrow.effect.reach": "Arrow of Reach",
-      "chattext.medicalgui.notmedninja": "You don\u0027t know any medical ninjutsu.",
+      "chattext.medicalgui.notmedninja": "You are not a medical ninja.",
       "tooltip.shikotsumyaku.dancelarch": "Larch Dance",
       "entity.tensei_baku_silver.name": "Silver wheel Rebirth Blast",
       "advancements.futton_acquired.title": "Boil Release Acquired",
@@ -7713,7 +8046,7 @@
       "entity.susanooclothed.name": "Susanoo",
       "item.raiton.name": "Lightning Release",
       "entity.lightning_arc.name": "Lightning Arc",
-      "advancements.eternalmangekyoachieved.descr": "The Eternal Mangeky¨­ Sharingan is proof an Uchiha has continued to push forward despite experiencing great losses.",
+      "advancements.eternalmangekyoachieved.descr": "The Eternal Mangekyï¿½ï¿½ Sharingan is proof an Uchiha has continued to push forward despite experiencing great losses.",
       "advancements.bakuton_acquired.title": "Explosion Release Acquired",
       "advancements.ranton_acquired.title": "Storm Release Acquired",
       "entity.susanoowinged.name": "Susanoo",
@@ -7730,7 +8063,7 @@
       "item.mangekyosharinganobitohelmet.name": "Mangekyo Sharingan - Kamui",
       "advancements.sharinganopened.title": "Sharingan activated",
       "tipped_arrow.effect.chakra_regeneration": "Arrow of Chakra Regeneration",
-      "advancements.kekkei_tota_awakened.descr": "Kekkei T¨­ta is an advanced branch of jutsu that is more advanced than kekkei genkai. The only known example is Dust Release, a combination of three different nature transformations ¡ª earth, wind, and fire.",
+      "advancements.kekkei_tota_awakened.descr": "Kekkei Tï¿½ï¿½ta is an advanced branch of jutsu that is more advanced than kekkei genkai. The only known example is Dust Release, a combination of three different nature transformations ï¿½ï¿½ earth, wind, and fire.",
       "entity.water_prison.name": "Water Prison jutsu",
       "item.inton.name": "Yin Release",
       "subtitles.lasercircus": "",
@@ -7812,6 +8145,7 @@
       "entity.snake_8_heads.name": "8-branch Jutsu",
       "entity.transformation_jutsu.name": "Transformation Jutsu",
       "entity.ninja_iwa.name": "Ninja Iwa",
+      "tooltip.byakurinnesharingan.pulse": "Chakra pulse",
       "subtitles.daibakusuishoha": "",
       "tooltip.6psenjutsu.shoot": "Truth Seeking Ball: shoot",
       "subtitles.kuchiyosenojutsu": "",
@@ -7908,6 +8242,7 @@
       "item.whitezetsuflesh.name": "White Zetsu Flesh",
       "subtitles.hiruko_tail": "",
       "item.mokuton.name": "Wood Release",
+      "subtitles.dojutsu": "",
       "item.ninja_armor.name": "Ninja Armor",
       "item.samurai_armorboots.name": "Samurai Armor Boots",
       "lingering_potion.effect.reach": "Lingering Reach",
@@ -7954,7 +8289,7 @@
       "tooltip.jinton.musthave": "Must have Doton, Futon \u0026 Katon",
       "subtitles.amaterasu2": "",
       "item.shikotsumyaku.name": "Skeletal Control",
-      "advancements.byakuganopened.descr": "Byakugan is regarded as one of the \"Three Great D¨­jutsu\", the others being the Sharingan and the Rinnegan.",
+      "advancements.byakuganopened.descr": "Byakugan is regarded as one of the \"Three Great Dï¿½ï¿½jutsu\", the others being the Sharingan and the Rinnegan.",
       "subtitles.dingding": "",
       "chattext.specialevent.villagesiege": "Event alert: A siege is coming!",
       "entity.false_darkness.name": "False Darkness",
@@ -8211,7 +8546,8 @@
       "item.ninja_armor_konohahelmet.name": "Forehead Protector (Konoha)",
       "item.scroll_enhanced_strength.name": "Medical Ninjutsu - Chakra Enhanced Strength",
       "entity.susanooskeleton.name": "Susanoo Skeleton",
-      "tooltip.jiton.musthave": "Must have Doton \u0026 Futon",
+      "entity.hiraishin.name": "Hiraishin",
+      "tooltip.jiton.musthave": "Must have Earth \u0026 Wind release",
       "item.anbu_sword.name": "Anbu Sword",
       "entity.specialeffect.name": "Special Effect",
       "effect.flight": "Flight",

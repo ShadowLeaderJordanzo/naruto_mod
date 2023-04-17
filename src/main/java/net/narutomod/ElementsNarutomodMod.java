@@ -123,8 +123,6 @@ public class ElementsNarutomodMod implements IFuelHandler, IWorldGenerator {
 				new net.minecraft.util.SoundEvent(new ResourceLocation("narutomod", "80GodsPunch")));
 		sounds.put(new ResourceLocation("narutomod", "Kaguya_FinalTSB"),
 				new net.minecraft.util.SoundEvent(new ResourceLocation("narutomod", "Kaguya_FinalTSB")));
-		sounds.put(new ResourceLocation("narutomod", "dojutsu_activate"),
-				new net.minecraft.util.SoundEvent(new ResourceLocation("narutomod", "dojutsu_activate")));
 		sounds.put(new ResourceLocation("narutomod", "BanshoTenin"),
 				new net.minecraft.util.SoundEvent(new ResourceLocation("narutomod", "BanshoTenin")));
 		sounds.put(new ResourceLocation("narutomod", "sekizo"), new net.minecraft.util.SoundEvent(new ResourceLocation("narutomod", "sekizo")));
@@ -269,6 +267,7 @@ public class ElementsNarutomodMod implements IFuelHandler, IWorldGenerator {
 				new net.minecraft.util.SoundEvent(new ResourceLocation("narutomod", "senbon_impact")));
 		sounds.put(new ResourceLocation("narutomod", "roar"), new net.minecraft.util.SoundEvent(new ResourceLocation("narutomod", "roar")));
 		sounds.put(new ResourceLocation("narutomod", "hirudora"), new net.minecraft.util.SoundEvent(new ResourceLocation("narutomod", "hirudora")));
+		sounds.put(new ResourceLocation("narutomod", "dojutsu"), new net.minecraft.util.SoundEvent(new ResourceLocation("narutomod", "dojutsu")));
 	}
 
 	public void preInit(FMLPreInitializationEvent event) {
