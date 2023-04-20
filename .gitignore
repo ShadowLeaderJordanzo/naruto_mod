@@ -26,3 +26,11 @@ run/
 
 # Don't want that
 .classpath
+*.json
+*.lang
+*.ogg
+*.obj
+*.nbt
+*.png
+*.mcmeta
+*.class
