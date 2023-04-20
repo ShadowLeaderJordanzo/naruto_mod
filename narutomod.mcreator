@@ -1,8 +1,8 @@
 {
   "id_map": {
+    "GUI": 63,
     "ENTITY": 420,
-    "DIMENSION": 13,
-    "GUI": 63
+    "DIMENSION": 13
   },
   "mod_elements": [
     {
@@ -7087,6 +7087,27 @@
         "1": 420
       },
       "registry_name": "hiraishin"
+    },
+    {
+      "name": "ToggleSharinganLockOnKeyPressed",
+      "type": "procedure",
+      "sortid": 843,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "toggle_sharingan_lock_on_key_pressed",
+      "metadata": {
+        "dependencies": []
+      }
+    },
+    {
+      "name": "ToggleSharinganLock",
+      "type": "keybind",
+      "sortid": 844,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "toggle_sharingan_lock"
     }
   ],
   "variable_elements": [
@@ -7167,6 +7188,12 @@
       "type": "string",
       "scope": "global",
       "value": "TenseiganEvolvedTime"
+    },
+    {
+      "name": "sharinganLockToggled",
+      "type": "string",
+      "scope": "global",
+      "value": "sharinganLockToggledFlag"
     }
   ],
   "sound_elements": [
@@ -8079,6 +8106,7 @@
       "item.byakuganhelmet.name": "Byakugan",
       "tooltip.rinnegan.jutsu2": "Tendo(Chibakutensei/Tengaishinsei[SHIFT]), Preta(Shield), Animal(Summoning), Naraka(KingOfHell), Outer(FirstEvil L60)",
       "tooltip.rinnegan.jutsu3": "Banshotenin ([SHIFT] to dislodge blocks)",
+      "key.mcreator.toggle_sharingan_lock": "Toggle Sharingan Lock",
       "entity.wood_burial.name": "Wood Burial",
       "entity.hakkeshokeiten.name": "Hakkesho Keiten",
       "subtitles.snake_hiss": "",
